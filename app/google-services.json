@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "631891703409",
+    "project_id": "compose-firebse-auth",
+    "storage_bucket": "compose-firebse-auth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631891703409:android:791d3049787ecc6fa2cdd0",
+        "android_client_info": {
+          "package_name": "com.example.auth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvvi9grNJfqfqunakblRhY1Ym4ApKnvyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

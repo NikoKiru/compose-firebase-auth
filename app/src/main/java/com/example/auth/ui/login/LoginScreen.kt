@@ -20,6 +20,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 @Composable
 fun Login(
     onRegistrationSuccess: () -> Unit,
+    onRegistrationFailure: () -> Unit
 ) {
     val loginViewModel: LoginViewModel = viewModel()
 
@@ -48,7 +49,7 @@ fun Login(
                 Button(onClick = {}) {
                     Text("Login")
                 }
-                Button(onClick = { loginViewModel.registerNewUser(onRegistrationSuccess) }) {
+                Button(onClick = { loginViewModel.registerNewUser(onRegistrationSuccess, onRegistrationFailure) }) {
                     Text("Create new user")
                 }
             }
@@ -60,5 +61,5 @@ fun Login(
 @Preview
 @Composable
 fun RegisterPreview() {
-    Login(onRegistrationSuccess = {})
+    Login(onRegistrationSuccess = {}, onRegistrationFailure = {})
 }
