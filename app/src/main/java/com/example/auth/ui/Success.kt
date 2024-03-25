@@ -16,6 +16,8 @@ fun Success(){
         contentAlignment = Alignment.Center
     ){
         Text("Success 🚀");
+        FirebaseAuth.getInstance().getCurrentUser()
+        FirebaseAuth.getInstance().currentUser?.email
     }
 }
 

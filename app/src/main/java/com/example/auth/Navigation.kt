@@ -19,7 +19,9 @@ fun Navigation() {
         composable("register") {
             Login(
                 onRegistrationSuccess = { navController.navigate("success") },
-                onRegistrationFailure = {navController.navigate("failure")})
+                onRegistrationFailure = {navController.navigate("failure")},
+                onLoginSuccess = {navController.navigate("success")}
+                )
 
         }
         composable("success") {

@@ -17,7 +17,7 @@ class AccountService {
     fun login(email: String, password: String, onResult: () -> Unit) {
         Firebase.auth.signInWithEmailAndPassword(email, password)
             .addOnSuccessListener {
-                /*TODO*/
+                onResult()
             }
     }
 }
